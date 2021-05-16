@@ -11,6 +11,7 @@ public:
     int bonusHP = 0;
     void BattleCry();
     void Heal();
+    int attack();
     void setHealth(int &value);
     int getHealth();
 };
@@ -21,15 +22,12 @@ private:
     int healthPoints = 15;
 public:
     const char* battleCry[3] = {"AVE MARIA, DEUS VULT!", "PRO FIDE!", "GOTT MIT UNS!"};
-    int attack();
 };
 
 class Archer : public Hero {
 private:
     int damage = 55;
     int healthPoints = 10;
-public:
-    int attack();
 };
 
 

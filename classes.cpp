@@ -1,14 +1,6 @@
 #include "classes.h"
 
-int Knight::attack() {
-    int newDamage = damage;
-    if (bonusDamage > 0) {
-        newDamage += bonusDamage;
-    }
-    return newDamage;
-}
-
-int Archer::attack() {
+int Hero::attack() {
     int newDamage = damage;
     if (bonusDamage > 0) {
         newDamage += bonusDamage;
