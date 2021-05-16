@@ -82,9 +82,6 @@ int main() {
             int damageGiven = knights[knSize - 1].attack();
             int deltaHP = knightsEnemy[knEnemySize - 1].getHealth() - damageGiven;
             knightsEnemy[knEnemySize - 1].setHealth(deltaHP);
-        } else if (!(strcmp(command, "printhealth"))) {
-            std::cout << knights[knSize - 1].getHealth() << " Front knight's health" << '\n';
-            std::cout << archers[archSize - 1].getHealth() << " Front archer's health" << '\n';
         } else if (!(strcmp(command, "heal"))) {
             knights[knSize - 1].Heal();
             archers[archSize - 1].Heal();
